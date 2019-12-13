@@ -1,0 +1,71 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<LINK REL="SHORTCUT ICON" HREF="favicon.ico">
+	<TITLE>Java CrankShaft Applet</TITLE>
+ </HEAD>
+ <BODY BGCOLOR="white">
+<H2>Java CrankShaft Applet</H2>
+<HR>
+<P>
+	Java 2 includes an affine transformation class, to use for 2D graphics and animation.
+	However, many (perhaps most) browsers in the field don't have built-in support for
+	Java 2 or the affine transform.  This Java applet implements an affine transform
+	using only Java 1.0 classes and methods, so it can be viewed by almost any browser,
+	regardless of vintage.
+</P>
+<APPLET
+     ALT="CrankShaft Applet"
+     TITLE="CrankShaft Applet"
+     CODE="CrankShaft.class"
+     HEIGHT="210"
+     WIDTH="575">
+=== Oops, your browser isn't Java-enabled. ===
+</APPLET>
+<P>
+	Homogeneous coordinates are used, with the third coordinate always set to <I>h = 1</I>.
+	This allows use of a composite transformation matrix which concatenates all needed
+	translations, rotations, and scaling into a single matrix which is then applied to each
+	polygon to be rendered.  The result is code that is compact and easy to maintain, with
+	excellent performance at frame rates as high as 10 per second.
+</P>
+<P>
+	Click the link below to see the complete source file.
+	I first built and tested this applet with Apple's MRJ SDK 2.2,
+	but it should build and run with any version of Java on any platform.
+	Please let me know if you find a version or platform that doesn't work.
+	The source code is offered free for all uses, so it's up to <CITE>you</CITE>
+	to determine if it is suitable for your application.
+</P>
+<A HREF="CrankShaft.java" target="_blank">CrankShaft.java Source File.</A>
+<H3><A name="Refs">References</A></H3>
+<OL>
+	<LI>D. Hearn and M. Baker, <CITE>Computer Graphics--C Version</CITE>,
+	Upper Saddle River: Prentice-Hall, Inc. 1997.
+	<LI>Lawrence Rodrigues, <A HREF="http://www.amazon.com/Building-Imaging-Applications-Java-Technology/dp/0201700743" target="_blank">
+	<CITE>Building Imaging Applications with Java Technology</CITE></A>,
+	Boston: Addison-Wesley, 2001.
+	<LI>David Flanagan, <A HREF="http://www.oreilly.com/catalog/jenut/" target="_blank">
+	<CITE>Java Examples In a Nutshell</CITE></A>,
+	Sebastopol: O'Reilly &amp; Associates, Inc. 1997.
+	<LI>Information about the Java SDK is available on Oracle's
+	<A HREF="http://www.oracle.com/technetwork/java/index.html" target="_blank">Java Home Page</A>
+	<LI>The Java SDK for Macintosh was previously maintained by
+	<A HREF="http://developer.apple.com/java/" target="_blank">Apple Computer, Inc</A>.
+</OL>
+<CENTER>
+<IMG SRC="../WebArrowGroup.gif" BORDER=0 USEMAP="#ArrowMap" ALT="ArrowMap">
+</CENTER>
+<HR>
+<BR>
+<MAP NAME="ArrowMap">
+	<AREA SHAPE="POLY" HREF="../WireTable/index.html" ALT="Prev Page" TITLE="Prev Page"
+	COORDS="4,79,16,91,22,85,46,85,61,70,61,64,40,64,40,58,4,70,4,79">
+	<AREA SHAPE="POLY" HREF="../index.html" ALT="Home Page" TITLE="Home Page"
+	COORDS="56,41,62,41,62,61,70,61,85,46,85,22,91,16,79,4,70,4,56,41">
+	<AREA SHAPE="POLY" HREF="../Studio/index.html" ALT="Next Page" TITLE="Next Page"
+	COORDS="80,76,94,63,118,63,124,57,137,70,137,78,100,90,100,85,80,85,80,76">
+</MAP>
+	<i>Last updated 4/12/2012 by </i><a href="mailto:No_Spam_Please!">
+	<img src="../nospam.gif" border="0" align="top" hspace="5" alt="No Spam Please!" title="No Spam Please!"></a>
+</BODY>
+</HTML>
